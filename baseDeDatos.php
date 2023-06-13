@@ -1,5 +1,4 @@
 <?php
-error_reporting(E_ALL);
 class BaseDeDatos
 {
     private $conexion;
@@ -11,7 +10,8 @@ class BaseDeDatos
         } else {
             $con = mysqli_init();
             mysqli_ssl_set($con, NULL, NULL, "./DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-            $this->conexion = new mysqli_real_connect($con, "sewextraordinaria.mysql.database.azure.com", "reservas", "sewExtraordinaria23", "riosa", 3306, MYSQLI_CLIENT_SSL);
+            mysqli_real_connect($con, "sewextraordinaria.mysql.database.azure.com", "reservas", "sewExtraordinaria23", "riosa", 3306, MYSQLI_CLIENT_SSL);
+            $this->conexion = $con;    
         }
         if ($this->conexion->connect_error) {
             die("Error de conexión: " . $this->conexion->connect_error);
