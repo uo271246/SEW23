@@ -9,7 +9,7 @@ class BaseDeDatos
         $this->conexion = new mysqli("localhost", "reservas", "sewExtraordinaria23", "riosa");
         } else {
             $con = mysqli_init();
-            mysqli_ssl_set($con, NULL, NULL, "./DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+            mysqli_ssl_set($con, NULL, NULL, __DIR__ . "/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
             mysqli_real_connect($con, "sewextraordinaria.mysql.database.azure.com", "reservas", "sewExtraordinaria23", "riosa", 3306, MYSQLI_CLIENT_SSL);
             $this->conexion = $con;    
         }
