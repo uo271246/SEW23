@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>El Angliru</name>
+<Point>
+<coordinates>-5.5255,43.135143,31562015111570</coordinates>
+</Point>
+<Point>
+<coordinates>-5.900617,43.244502,620</coordinates>
+</Point>
+<Point>
+<coordinates>-5.940263,43.224832,1511</coordinates>
+</Point>
+<Point>
+<coordinates>-5.941979,43.22147,1570</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ruta de la Collada al Monsacro</name>
+<Point>
+<coordinates>-5.876085,43.26856843,44590210021016</coordinates>
+</Point>
+<Point>
+<coordinates>-5.888645,43.264824,902</coordinates>
+</Point>
+<Point>
+<coordinates>-5.890468,43.26151,1002</coordinates>
+</Point>
+<Point>
+<coordinates>-5.884444,43.257922,1016</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Llamo - Antiguas Minas de Sobre de Rioseco - Minas del Texéu</name>
+<Point>
+<coordinates>-5.884355,43.19214343,540100010121016</coordinates>
+</Point>
+<Point>
+<coordinates>-5.885137,43.186134,1000</coordinates>
+</Point>
+<Point>
+<coordinates>-5.885797,43.185876,1012</coordinates>
+</Point>
+<Point>
+<coordinates>-5.884988,43.183793,1016</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,115 @@
+/*Pablo Rodríguez Rodríguez*/
+
+/*Especificidad: 001*/
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  background-color: rgb(230, 230, 230);
+}
+
+/*Especificidad: 001*/
+h1 {
+  text-transform: uppercase;
+  padding: 2%;
+  font-size: 2em;
+  
+}
+
+/* Especificidad 001*/
+h2 {
+  background-color: #dadada;
+  font-size: 1.5em;
+}
+
+/* Especificidad 001*/
+h3 {
+  font-size: 1.25em;
+  margin: 1% 1% auto;
+  background-color: #dadada;
+}
+
+/* Especificidad 001*/
+h4 {
+  margin: 1% 1% auto;
+  background-color: #dadada;
+}
+
+/* Especificidad 001*/
+section {
+  background-color: #ffffff;
+}
+
+/* Especificidad 003*/
+section>p+img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Especificidad 001*/
+img {
+  max-width: 40.5vw;
+  height: auto;
+}
+
+/* Especificidad 001*/
+video {
+  max-width: 40.5vw;
+  height: auto;
+}
+
+/* Especificidad 001*/
+dl {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Especificidad 001*/
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Especificidad 002*/
+h3+p {
+  /* color de fuetne heredado de body*/
+  margin: 1% 1% 1%;
+  padding-bottom: 1%;
+}
+
+/* Especificidad 002*/
+h1+p {
+  /* color de fuetne heredado de body*/
+  font-size: large;
+}
+
+/* Especificidad 001*/
+nav {
+  background-color: #a7a7a7;
+  margin: 0%;
+  height: fit-content;
+  padding: 0.5%;
+}
+/* Especificidad 002*/
+nav a {
+  background-color: rgb(93, 93, 93);
+  color: white;
+  text-decoration: none;
+  padding: 0.5%
+}
+
+/* Especificidad 001 */
+header, footer {
+  background-color: #dadada;;
+}
+
+/* Especificidad 001 */
+footer {
+  padding: 2%;
+}
+
+
+/* Especificidad 001*/
+p {
+  margin-left: 2%;
+  margin-right: 2%;
+}

@@ -1,0 +1,27 @@
+/*Pablo Rodríguez Rodríguez*/
+
+/* Especificidad 001*/
+table {
+    margin: 2% auto 2%;
+    border: 0.0625em solid;
+    border-collapse: collapse;
+    /* color de fuente heredado de body*/
+    background-color: #ffffff;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Especificidad 001 */
+td {
+    border: 0.0625em solid;
+    width: fit-content;
+}
+
+/*Especificidad 001*/
+th {
+    /* color de fuente heredado de body */
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    border: 0.0625em solid;
+}

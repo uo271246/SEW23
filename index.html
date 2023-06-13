@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name ="author" content = "Pablo Rodríguez Rodríguez" />
+	<meta name ="description" content ="Índice del sitio web sobre Riosa" />
+	<meta name ="keywords" content= "Noticias, mapa" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+	<title>Índice Riosa</title>
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<script src="js/Carrusel.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+	
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    
+	<header>
+		<h1>Concejo de Riosa</h1>
+	</header>
+	<nav>
+		<a title="Indice" accesskey="i" href="index.html" tabindex="1">Índice</a>
+		<a title="Gastronomía" accesskey="g" href="gastronomia.html" tabindex="2">Gastronomía</a>
+		<a title="Juego" accesskey="j" href="juego.html" tabindex="3">Juego</a>
+		<a title="Meteorología" accesskey="m" href="meteorologia.html" tabindex="4">Meteorología</a>
+		<a title="Rutas" accesskey="r" href="rutas.html" tabindex="5">Rutas</a>
+		<a title="Reservas" accesskey="s" href="php/reservas.php" tabindex="6">Reservas</a>
+        <a title="Login" accesskey="c" href="php/login.php" tabindex="7">Iniciar sesión</a>
+        <a title="Registrarse" accesskey="i" href="php/registro.php" tabindex="8">Registro</a>
+	</nav>
+	<main>
+		<section>
+		<h2>Carrusel sitios turísticos</h2>
+			<section>
+				<img src ="multimedia/angliru.png" alt="Icono del Framework"/>
+			</section>
+			<input type="button" value="Anterior" onclick="carrusel.getPrevious()" />
+			<input type="button" value="Siguiente" onclick="carrusel.getNext()" />
+		</section>
+		
+	<section>
+		<h2>Noticias mundiales</h2>
+		<script src="js/Noticias.js"></script>
+		</section>
+		<section>
+		<h2>Mapa</h2>
+		<script src="js/Map.js"></script>
+		</section>
+		<section>
+			<h2>Meteorología</h2>
+			<script src="js/PrevisionMeteorologicaActual.js"></script>
+		</section>
+
+	</main>
+	<footer>
+	 <p>Autor : <em>Pablo Rodríguez Rodríguez</em></p>
+	</footer>
+</body>
+</html>

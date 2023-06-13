@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas>
+  <ruta nombre="El Angliru">
+    <tipo>Senderismo</tipo>
+    <transporte>Andando</transporte>
+    <fechaInicio>2023-07-15</fechaInicio>
+    <horaInicio>09:00</horaInicio>
+    <duracion>4 horas</duracion>
+    <agencia>Retocima</agencia>
+    <descripcion>Una emocionante pero exigente subida hasta la cima del Angliru</descripcion>
+    <personasAdecuadas>Gente en forma</personasAdecuadas>
+    <lugarInicio>La Vega</lugarInicio>
+    <direccionInicio>Avenida Pola de Lena</direccionInicio>
+    <coordenadas>
+      <latitud>43.1351</latitud>
+      <longitud>-5.5255</longitud>
+      <altitud>315.0</altitud>
+    </coordenadas>
+    <hitos>
+      <hito unidades="kilómetros" nombre="Porció">
+        <descripcion>Hermosa aldea de la parroquia de Riosa</descripcion>
+        <coordenadas>
+          <latitud>43.244502</latitud>
+          <longitud>-5.900617</longitud>
+          <altitud>620.0</altitud>
+        </coordenadas>
+        <distancia>4</distancia>
+        <fotos>
+        <foto>multimedia/porcio.png</foto>
+        </fotos>
+      </hito>
+      <hito unidades="kilómetros" nombre="Llago Angliru">
+        <descripcion>Famoso lago a escasos metros de la cima</descripcion>
+        <coordenadas>
+          <latitud>43.224832</latitud>
+          <longitud>-5.940263</longitud>
+          <altitud>1511.0</altitud>
+        </coordenadas>
+        <distancia>8,7</distancia>
+        <fotos>
+        <foto>multimedia/llago_angliru.png</foto>
+        </fotos>
+      </hito>
+       <hito unidades="kilómetros" nombre="Alto del Angliru">
+        <descripcion>Preciosa cima del pico</descripcion>
+        <coordenadas>
+          <latitud>43.221470</latitud>
+          <longitud>-5.941979</longitud>
+          <altitud>1570.0</altitud>
+        </coordenadas>
+        <distancia>0,5</distancia>
+        <fotos>
+        <foto>multimedia/cima_angliru.png</foto>
+        </fotos>
+      </hito>
+    </hitos>
+    <referencias>
+      <referencia>https://39x28altimetrias.com/altodelangliruporriosa.html</referencia>
+      <referencia>https://www.alltrails.com/es/ruta/spain/asturias/cima-as17-angliru-la-vega</referencia>
+      <referencia>https://www.retocima.es/ast17.htm</referencia>
+    </referencias>
+    <recomendacion>10</recomendacion>
+  </ruta>
+ <ruta nombre="La Collada al Monsacro">
+    <tipo>Senderismo y paisajes</tipo>
+    <transporte>Andando</transporte>
+    <fechaInicio>2023-07-19</fechaInicio>
+    <horaInicio>08:00</horaInicio>
+    <duracion>4 horas</duracion>
+    <agencia>Retocima</agencia>
+    <descripcion>Preciosa ruta de senderismo por los alrededores de las poblaciones asturianas de Figares y Riosa.</descripcion>
+    <personasAdecuadas>Gente en forma</personasAdecuadas>
+    <lugarInicio>La Collá </lugarInicio>
+    <direccionInicio>Calle Aldea la Collada</direccionInicio>
+    <coordenadas>
+      <latitud>43.268568</latitud>
+      <longitud>-5.876085</longitud>
+      <altitud>445.0</altitud>
+    </coordenadas>
+    <hitos>
+      <hito unidades="kilómetros" nombre="Capilla de la Magdalena">
+        <descripcion>Hermosa capilla de piedra</descripcion>
+        <coordenadas>
+          <latitud>43.264824</latitud>
+          <longitud>-5.888645</longitud>
+          <altitud>902.0</altitud>
+        </coordenadas>
+        <distancia>2,2</distancia>
+        <fotos>
+        <foto>multimedia/madalena.png</foto>
+        </fotos>
+      </hito>
+      <hito unidades="kilómetros" nombre="Capilla de Santiago">
+        <descripcion>Capilla antiquísima</descripcion>
+        <coordenadas>
+          <latitud>43.261510</latitud>
+          <longitud>-5.890468</longitud>
+          <altitud>1002.0</altitud>
+        </coordenadas>
+        <distancia>0,6</distancia>
+        <fotos>
+        <foto>multimedia/santiago.png</foto>
+        </fotos>
+      </hito>
+       <hito unidades="kilómetros" nombre="Vistas al picu MArieyu">
+        <descripcion>Vistas al picu Marieyu desde la parte más alta de la ruta</descripcion>
+        <coordenadas>
+          <latitud>43.257922</latitud>
+          <longitud>-5.884444</longitud>
+          <altitud>1016.0</altitud>
+        </coordenadas>
+        <distancia>0,5</distancia>
+        <fotos>
+        <foto>multimedia/marieyu.png</foto>
+        </fotos>
+      </hito>
+    </hitos>
+    <referencias>
+      <referencia>https://es.wikiloc.com/rutas-senderismo/ruta-de-la-collada-al-monsacro-69452223</referencia>
+      <referencia>https://www.alltrails.com/es/ruta/spain/asturias/senda-grandariella-capilla-de-santiago-caminu-el-cintu</referencia>
+      <referencia>https://es.wikipedia.org/wiki/Ermita_de_la_Magdalena_%28Monsacro%29</referencia>
+      <referencia>https://es.wikiloc.com/rutas-senderismo/monsacro-la-fayona-marieyu-desde-area-recreativa-de-viapara-114496262/photo-73574272</referencia>
+    </referencias>
+    <recomendacion>8</recomendacion>
+  </ruta>
+<ruta nombre="Llamo - Antiguas Minas de Sobre de Rioseco - Minas del Texéu">
+    <tipo>Senderismo</tipo>
+    <transporte>Andando</transporte>
+    <fechaInicio>2023-07-19</fechaInicio>
+    <horaInicio>08:00</horaInicio>
+    <duracion>2 horas</duracion>
+    <agencia>Retocima</agencia>
+    <descripcion>Preciosa ruta de senderismo por los alrededores de las poblaciones asturianas de Figares y Riosa.</descripcion>
+    <personasAdecuadas>Todos los públicos</personasAdecuadas>
+    <lugarInicio>Llamo</lugarInicio>
+    <direccionInicio>Carretera RI-6</direccionInicio>
+    <coordenadas>
+      <latitud>43.192143</latitud>
+      <longitud>-5.884355</longitud>
+      <altitud>540.0</altitud>
+    </coordenadas>
+    <hitos>
+      <hito unidades="kilómetros" nombre="Rioseco">
+        <descripcion>Antiguo poblado minero de Rioseco</descripcion>
+        <coordenadas>
+          <latitud>43.186134</latitud>
+          <longitud>-5.885137</longitud>
+          <altitud>1000.0</altitud>
+        </coordenadas>
+        <distancia>2</distancia>
+        <fotos>
+        <foto>multimedia/rioseco.png</foto>
+        </fotos>
+      </hito>
+      <hito unidades="kilómetros" nombre="Minas del Texeu">
+        <descripcion>Minas prehistóricas del Texeu</descripcion>
+        <coordenadas>
+          <latitud>43.185876</latitud>
+          <longitud>-5.885797</longitud>
+          <altitud>1012.0</altitud>
+        </coordenadas>
+        <distancia>0,5</distancia>
+        <fotos>
+        <foto>multimedia/minas_texeu.png</foto>
+        </fotos>
+      </hito>
+       <hito unidades="kilómetros" nombre="Mirador">
+        <descripcion>Mirador del poblado minero de Rioseco</descripcion>
+        <coordenadas>
+          <latitud>43.183793</latitud>
+          <longitud>-5.884988</longitud>
+          <altitud>1016.0</altitud>
+        </coordenadas>
+        <distancia>1</distancia>
+        <fotos>
+        <foto>multimedia/mirador_rioseco.png</foto>
+        </fotos>
+      </hito>
+    </hitos>
+    <referencias>
+      <referencia>https://www.elcomercio.es/rutas-senderismo-por-asturias/ruta-minas-prehistoricas-texeo-riosa-20210218115223-nt.html</referencia>
+      <referencia>https://www.alltrails.com/trail/spain/asturias/llamo-antiguas-minas-de-sobre-de-rioseco-minas-del-texeu</referencia>
+      <referencia>https://patrimoniuindustrial.com/fichas/minas-del-aramo/</referencia>
+    </referencias>
+    <recomendacion>7</recomendacion>
+  </ruta>
+
+</rutas>

@@ -1,0 +1,93 @@
+/*Pablo Rodríguez Rodríguez*/
+
+/* Especificidad 001 */
+body {
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+/* Especificidad 001 */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+
+}
+/* Especificidad 003*/
+main section > section{
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+
+/* Especificidad 012*/
+main>article:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+/* Especificidad 001*/
+image{ 
+    width: 50vw;
+    justify-self: left;
+}
+
+/* Especificidad 001*/
+video { 
+    width: 50vw;
+    justify-self: left;
+}
+
+/* Especificidad 002*/
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+/* Especificidad 001 */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+
+}
+
+/* Especificidad 011*/
+section:last-child {
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+/* Especificidad 003*/
+section>h2+p {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+
+/* Especificidad 005*/
+main > section > h2 + p + label {
+	
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+
+/* Especificidad 012*/
+main section:first-child {
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+

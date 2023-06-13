@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+	<meta charset="UTF-8" />
+	<meta name ="author" content = "Pablo Rodríguez Rodríguez" />
+	<meta name ="description" content ="Documento del sitio web sobre la gastronomia de Riosa" />
+	<meta name ="keywords" content= "Riosa, feria, restaurante, pote" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+	<title>Gatronomía Riosa</title>
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/tabla.css" />
+</head>
+	
+<body>
+
+    <header>
+		<h1>Concejo de Riosa</h1>
+	</header>
+	<nav>
+		<a title="Indice" accesskey="i" href="index.html" tabindex="1">Índice</a>
+		<a title="Gastronomía" accesskey="g" href="gastronomia.html" tabindex="2">Gastronomía</a>
+		<a title="Juego" accesskey="j" href="juego.html" tabindex="3">Juego</a>
+		<a title="Meteorología" accesskey="m" href="meteorologia.html" tabindex="4">Meteorología</a>
+		<a title="Rutas" accesskey="r" href="rutas.html" tabindex="5">Rutas</a>
+		<a title="Reservas" accesskey="s" href="php/reservas.php" tabindex="6">Reservas</a>
+        <a title="Login" accesskey="c" href="php/login.php" tabindex="7">Iniciar sesión</a>
+        <a title="Registrarse" accesskey="i" href="php/registro.php" tabindex="8">Registro</a>
+	</nav>
+	
+	<main>
+		<article>
+			<h2>Restaurantes</h2>
+		<section>
+			<h3>Restaurantes mejor valorados</h3>
+			<p>
+               Se han recopilado una serie de restaurantes conocidos por su calidad ubicados en
+			   el concejo de Riosa.
+            </p>
+			<table>
+				<tr>
+					<th scope="col" id="restaurante">Restaurante</th>
+					<th scope="col" id="localizacion">Localización</th>
+					<th scope="col" id="especialidad">Especialidad</th>
+					<th scope="col" id="puntuacion">Puntuación</th>
+				</tr>
+				<tr>
+					<th scope="row" id="puente">El Puente</th>
+					<td headers="localizacion puente">C. la Magdalena, 1, 33160 La Ara, Asturias</td>
+					<td headers="especialidad puente">Cordero</td>
+					<td headers="puntuacion puente">8.6</td>
+				</tr>
+				<tr>
+					<th scope="row" id="hogar">El Hogar</th>
+					<td headers="localizacion hogar">Tr. Sta. Bárbara, 33160 La Ara</td>
+					<td headers="especialidad hogar">Platos combinados</td>
+					<td headers="puntuacion hogar">9.2</td>
+				</tr>
+				<tr>
+					<th scope="row" id="lleron">El Nuevo Lleron Riosa</th>
+					<td headers="localizacion lleron">C. la Mina, 33160 La Ara, Asturias</td>
+					<td headers="especialidad lleron">Parrillada</td>
+					<td headers="puntuacion lleron">8.8</td>
+				</tr>
+				<tr>
+					<th scope="row" id="perdiz">La perdiz</th>
+					<td headers="localizacion perdiz">C. Río Llamo, 0 S/N, 33160, Asturias</td>
+					<td headers="especialidad perdiz">Picadillo de jabalí</td>
+					<td headers="puntuacion perdiz">7.6</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3>Multimedia ofrecida por los restaurantes</h3>
+			<p>
+				Algunos restaurantes han subido a internet imágenes o vídeos dónde se puede ver
+				la calidad de sus productos. 
+			</p>
+			<h4>Vídeo del restaurante El Puente</h4>
+			<video src="multimedia/restaurante_el_puente.mp4" controls></video>
+			<!--<h4>Fotografía de plato de El Hogar</h4>
+			<img src="multimedia/plato_el_hogar.png" alt="Plato cominado del restaurante El Hogar" />-->
+		</section>
+		<section>
+		<h3>Los platos más típicos de Riosa, agrupados por tipo y de mejor a peor son:</h3>
+			<dl>
+				<dt>Carne</dt>
+					<dd>
+						<ol>
+							<li>Callos</li>
+							<li>Cordero a la estaca</li>
+							<li>Cachopo de cecina y queso de cabra</li>
+						</ol>
+					</dd>
+				<dt>Verduras</dt>
+					<dd>
+						<ol>
+							<li>Parrillada de verduras</li>
+							<li>Berenjena asada</li>
+							<li>Pimientos rellenos</li>
+						</ol>
+					</dd>
+				<dt>Legumbres</dt>
+					<dd>
+						<ol>
+							<li>Pote asturiano</li>
+							<li>Fabada asturiana</li>
+							<li>Cocido con compango</li>
+						</ol>
+					</dd>	
+			</dl>
+		</section>
+		</article>
+	<section>
+		<h3>Gastronomia en las ferias</h3>
+		<p>Las ferias gastronómicas que se celebran a lo largo del año en Riosa son:</p>
+		<ul>
+			<li>Feria año nuevo</li>
+			<li>Feria del caballo</li>
+			<li>Feria andaluza</li>
+			<li>Feria del Rosario</li>
+			<li>Feria de Navidad</li>
+		</ul>
+		<p>Los habitantes y turistas han realizado el siguiente ranking en función de su popularidad:</p>
+		<ol>
+			<li>Feria del caballo</li>
+			<li>Feria año nuevo</li>
+			<li>Feria de Navidad</li>
+			<li>Feria del Rosario</li>
+			<li>Feria andaluza</li>
+		</ol>
+		<h3>Ambiente en las ferias</h3>
+		<p>Se ha proporcionado un audio de la Feria del caballo en la que se puede comprobar el gran ambiente que existe:</p>
+		<audio src="multimedia/feria_audio.mp3" controls></audio>
+	</section>
+	</main>
+	<footer>
+	 <p>Autor : <em>Pablo Rodríguez Rodríguez</em></p>
+	</footer>
+</body>
+</html>
