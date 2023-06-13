@@ -104,7 +104,7 @@ $sesionChecker -> requestMethod();
 		<a title="Rutas" accesskey="r" href="../rutas.html" tabindex="5">Rutas</a>
 		<a title="Reservas" accesskey="s" href="reservas.php" tabindex="6">Reservas</a>
         <a title="Login" accesskey="c" href="login.php" tabindex="7">Iniciar sesión</a>
-        <a title="Registrarse" accesskey="i" href="registro.php" tabindex="8">Registro</a>
+        <a title="Registrarse" accesskey="t" href="registro.php" tabindex="8">Registro</a>
 	</nav>
 <main>
   
