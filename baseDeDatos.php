@@ -12,7 +12,10 @@ class BaseDeDatos
             mysqli_ssl_set($con, NULL, NULL, __DIR__ . "/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
             mysqli_real_connect($con, "sewextraordinaria.mysql.database.azure.com", "reservas", "sewExtraordinaria23", "riosa", 3306, MYSQLI_CLIENT_SSL);
             $this->conexion = $con;
-            mysqli_connect_error(); 
+            if (mysqli_connect_errno())
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
         }
         if ($this->conexion->connect_error) {
             die("Error de conexión: " . $this->conexion->connect_error);
