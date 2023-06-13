@@ -11,11 +11,13 @@ class BaseDeDatos
             $con = mysqli_init();
             mysqli_ssl_set($con, NULL, NULL, __DIR__ . "/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
             mysqli_real_connect($con, "sewextraordinaria.mysql.database.azure.com", "reservas", "sewExtraordinaria23", "riosa", 3306, MYSQLI_CLIENT_SSL);
-            $this->conexion = $con;
-            if (mysqli_connect_errno())
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
+            if ($con->connect_error) {
+                die("Error de conexión: " . $con->connect_error);
+            }
+            if (mysqli_query($con,  "CREATE DATABASE IF NOT EXISTS $bd"
+            )) {
+            printf("Table created\n");
+            }
         }
         if ($this->conexion->connect_error) {
             die("Error de conexión: " . $this->conexion->connect_error);
