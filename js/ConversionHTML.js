@@ -14,17 +14,23 @@ class Conversor {
           rutas.push(ruta);
         });
         
-        let html = '<!DOCTYPE html>\n';
-        html += '<html lang = es>\n';
-        html += '<html>\n<head>\n<title>Rutas</title>\n</head>\n<body>\n';
-
+        let html = "<header><h1>Concejo de Riosa</h1></header>\n";
+        html += "<nav>\n";
+        html +='<a title="Indice" accesskey="i" href="index.html" tabindex="1">Índice</a>\n';
+        html +='<a title="Gastronomía" accesskey="g" href="gastronomia.html" tabindex="2">Gastronomía</a>\n';
+        html +='<a title="Juego" accesskey="j" href="juego.html" tabindex="3">Juego</a>\n';
+        html +='<a title="Meteorología" accesskey="m" href="meteorologia.html" tabindex="4">Meteorología</a>\n';
+        html +='<a title="Rutas" accesskey="r" href="rutas.html" tabindex="5">Rutas</a>\n';
+        html +='<a title="Reservas" accesskey="s" href="php/reservas.php" tabindex="6">Reservas</a>\n';
+        html +='<a title="Login" accesskey="c" href="php/login.php" tabindex="7">Iniciar sesión</a>\n';
+        html +='<a title="Registrarse" accesskey="t" href="php/registro.php" tabindex="8">Registro</a>\n';
+        html += "</nav>\n";
+        html += "<main>\n";
         rutas.forEach(function(ruta) { 
           html += ruta.generarHTML();   
         });
-
-        html += '</body>\n';
+        html += "</main>\n";
         html += '<footer><p>Autor : <em>Pablo Rodríguez Rodríguez</em></p></footer>\n';
-        html += '</html>\n';
 
         document.body.innerHTML = html;
       },
@@ -114,7 +120,7 @@ class Hito {
     const longitud = parseFloat(xml.find('longitud').text());
     const latitud = parseFloat(xml.find('latitud').text());
     const altitud = parseFloat(xml.find('altitud').text());
-    return `${longitud},${latitud},${altitud}`;
+    return `Longitud ${longitud}, Latitud ${latitud}, Altitud ${altitud}`;
   }
 
   getFotos(xml) {

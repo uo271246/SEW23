@@ -34,6 +34,12 @@ class ReservaTuristica {
                 $this->mensajeError = "La fecha de inicio debe ser menor que la fecha de fin.";
                 return;
             }
+            //no puede ser antes que ahora la reserva
+            $today = date("Y-m-d H:i:s");
+            if ($fechaInicio < $today) {
+                $this->mensajeError = "La fecha de inicio no puede ser anterior a la fecha actual";
+                return;
+            }
 
             //comporobacion 2: intervalo ya reservado ( una fecha inicio no puede estar entre una inicio y una final)
             $sql = "SELECT * FROM bookings WHERE (('$fechaInicio' BETWEEN initDate AND endDate) OR ('$fechaFin' BETWEEN initDate AND endDate)) AND (resource_id = '$idRecurso')";
@@ -93,8 +99,8 @@ class ReservaTuristica {
          }
 
             if ($resultado) {
-                $this->mensajeExito = "Reserva realizada exitosamente.";
-                $this->mostrarBills($idUsuario);
+                $this->mensajeExito = "<p>Reserva realizada exitosamente.</p>";
+                $this->mensajeExito .= $this->mostrarBills($idUsuario);
             } else {
                 $this->mensajeError = "Error al realizar la reserva. Por favor, inténtalo nuevamente.";
             }
@@ -105,18 +111,20 @@ class ReservaTuristica {
         $sql = "SELECT * FROM bills WHERE user_id = '$idUsuario'";
         $resultado = $this->bd->query($sql);
         $acumulador = 0;
+        $bills = "";
         if ($resultado->num_rows > 0) {
-            echo "<h2>Tus facturas:</h3>";
-            echo "<ul>";
+            $bills .= "<h2>Tus facturas:</h2>";
+            $bills .= "<ul>";
             while ($fila = $resultado->fetch_assoc()) {
                 $idBill = $fila['id'];
                 $total = $fila['total'];
                 $acumulador += $total;
-                echo "<li>Factura id: $idBill de precio total: $total</li>";
+                $bills .= "<li>Factura id: $idBill de precio total: $total</li>";
             }
-            echo "</ul>";
-            echo "<p>El total de todas las facturas es $acumulador</p>";
+            $bills .= "</ul>";
+            $bills .= "<p>El total de todas las facturas es $acumulador</p>";
         }
+        return $bills;
     }
 
     public function obtenerRecursosTuristicos() {
@@ -128,7 +136,7 @@ class ReservaTuristica {
 
     public function mostrarMensajes() {
         if (isset($this->mensajeExito)) {
-            echo "<p>{$this->mensajeExito}</p>";
+            echo $this->mensajeExito;
         }
 
         if (isset($this->mensajeError)) {
@@ -151,8 +159,12 @@ $reservaTuristica->procesarReserva();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reservar Recurso Turístico</title>
-    
+<meta charset="UTF-8" />
+	<meta name ="author" content = "Pablo Rodríguez Rodríguez" />
+	<meta name ="description" content ="Reservas Riosa" />
+	<meta name ="keywords" content= "Recurso turístico" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>Reservar Recurso Turístico</title> 
   <link rel='stylesheet' type='text/css' href='../estilo/estilo.css' />
   <link rel='stylesheet' type='text/css' href='../estilo/layout.css' />
 </head>
@@ -172,6 +184,14 @@ $reservaTuristica->procesarReserva();
 	</nav>
     <main>
     <section>
+    <h2>Introduce una fecha y un recurso</h2>
+    <p>Bienvenido o bienvenida a la pantalla de reserva de recursos</p>
+    <p>Debes de elegir un recurso y dos fechas para poder hacer la reserva</p> 
+    <p>Dicha reserva solo podrá ser realizada si hay hueco</p>
+    <p>Dicha reserva solo podrá ser realizada si hay las fechas son correctas</p>
+    <p>Dicha reserva solo podrá ser realizada si el recurso es correcto</p>
+    <p>Si todo sale bien, podrás ver todas tus facturas y el total de dinero gastado en Euros</p>
+    <p>Si algo sale mal se notificará el error</p>
     <form method="POST" action="#">
         <label for="idRecurso">Recurso Turístico:</label>
         <select id="idRecurso" name="idRecurso" required>

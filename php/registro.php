@@ -88,7 +88,12 @@ $sesionChecker -> requestMethod();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registro de Usuario</title>
+<meta charset="UTF-8" />
+    <meta name ="author" content = "Pablo Rodríguez Rodríguez" />
+	<meta name ="description" content ="Registro Riosa" />
+	<meta name ="keywords" content= "Email, contraseña" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuario</title>
   <link rel='stylesheet' type='text/css' href='../estilo/estilo.css' />
   <link rel='stylesheet' type='text/css' href='../estilo/layout.css' />
 </head>
@@ -109,6 +114,20 @@ $sesionChecker -> requestMethod();
 <main>
   
     <section>
+    <h2>Introduce tus datos</h2>
+    <p>Bienvenido o bienvenida a la pantalla de registro de usuario</p>
+    <p>Debes seguir los siguientes pasos:</p>
+    <ul>
+			<li>Introducir un email válido</li>
+			<li>Introducir un email que no esté registrado</li>
+			<li>Introducir una contrasña</li>
+			<li>Darle al botón</li>
+			<li>Esperar los resultados</li>
+            <li>Si todo ha salido correcto, se registrará el usuario</li>
+            <li>Si todo ha salido correcto, se redirigirá a reservas</li>
+            <li>Si no ha salido todo bien, se marcará el error</li>
+	</ul>
+    <p>Debes introducir tus datos en el formulario de abajo</p>
     <form method="POST" action="#">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>

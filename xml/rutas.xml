@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares SYSTEM "rutas.dtd">
 <rutas>
   <ruta nombre="El Angliru">
     <tipo>Senderismo</tipo>

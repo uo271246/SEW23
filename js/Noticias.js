@@ -26,13 +26,12 @@ class Noticias {
     }
 
     cargarNoticia(json) {
-        var h2Element = document.getElementsByTagName("h2")[1];
-        h2Element.insertAdjacentHTML("afterend", "<dl></dl>");
-        for (var numero in this.numeros) {
-            h2Element.insertAdjacentHTML("afterend", "<dt>" + json.results[numero].title + ":</dt>");
-            var info = json.results[numero].content;
-            h2Element.insertAdjacentHTML("afterend", "<dd>" + info + "</dd>");
-        }
+        var ps = document.getElementsByTagName("p");
+    var contador = 0;
+    for (var i = 0; i < this.numeros.length; i++) {
+        ps[i + 1].textContent = json.results[contador].title + ": " + json.results[contador].content;
+        contador++;
+    }
     };
 }
 

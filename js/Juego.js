@@ -28,7 +28,7 @@ class Juego {
 
     getQuestion(){
         //Pregunta
-       this.p[0].textContent = this.preguntas[this.contador];
+       this.p[4].textContent = this.preguntas[this.contador];
        //Respuestas
        this.spans[0].textContent = this.respuestasA[this.contador];
        this.spans[1].textContent = this.respuestasB[this.contador];
@@ -71,7 +71,7 @@ class Juego {
     }
 
     showMark() {
-        this.p[1].textContent = 'Puntuación: ' + this.puntuacion;
+        this.p[5].textContent = 'Puntuación: ' + this.puntuacion;
     }
 
 }
