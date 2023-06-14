@@ -126,23 +126,23 @@ class BaseDeDatos
         // Id 1
         $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (1,'Subida al Angliru', 'Ruta de subida hasta la cima del Angliru', 1, 5, 10)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso2 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (2,'Ruta Collada', 'Ruta de collada', 1, 5, 10)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso3 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (3,'Ruta minas', 'Ruta Minas', 1, 5, 10)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso4 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (4,'El puente', 'Ir al restaurante el Puente', 2, 5, 10)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso5 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (5,'El hogar', 'Ir al restaurante el Hogar', 2, 5, 15)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
-        VALUES (6,'Nuevo Lleron', 'Ir al restaurante wl Nuevo Lleron, 2, 5, 20)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso6 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (6,'Nuevo Lleron', 'Ir al restaurante wl Nuevo Lleron', 2, 5, 20)";
+        $crearRecurso7 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (7,'La perdiz', 'Ir al restaurante La perdiz', 2, 5, 20)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso8 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (8,'Aldea Soñada', 'Spa en las montañas asturianas', 3, 5, 11)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso9 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (9,'Museo de la mineria', 'Excelente para pasar un rato divertido', 4, 5, 13)";
-        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        $crearRecurso10 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (10,'Museo de la Lechería', 'Para conocer mejor una tradición asturiana', 1, 5, 12)";
 
         if ($_SERVER['HTTP_HOST'] === 'localhost') {
@@ -151,12 +151,30 @@ class BaseDeDatos
             $this->conexion->query($crearCategoria3);
             $this->conexion->query($crearCategoria4);
             $this->conexion->query($crearRecurso1);
+            $this->conexion->query($crearRecurso2);
+            $this->conexion->query($crearRecurso3);
+            $this->conexion->query($crearRecurso4);
+            $this->conexion->query($crearRecurso5);
+            $this->conexion->query($crearRecurso6);
+            $this->conexion->query($crearRecurso7);
+            $this->conexion->query($crearRecurso8);
+            $this->conexion->query($crearRecurso9);
+            $this->conexion->query($crearRecurso10);
         } else {
             mysqli_query($this->conexion, $crearCategoria1);
             mysqli_query($this->conexion, $crearCategoria2);
             mysqli_query($this->conexion, $crearCategoria3);
             mysqli_query($this->conexion, $crearCategoria4);
             mysqli_query($this->conexion, $crearRecurso1);
+            mysqli_query($this->conexion, $crearRecurso2);
+            mysqli_query($this->conexion, $crearRecurso3);
+            mysqli_query($this->conexion, $crearRecurso4);
+            mysqli_query($this->conexion, $crearRecurso5);
+            mysqli_query($this->conexion, $crearRecurso6);
+            mysqli_query($this->conexion, $crearRecurso7);
+            mysqli_query($this->conexion, $crearRecurso8);
+            mysqli_query($this->conexion, $crearRecurso9);
+            mysqli_query($this->conexion, $crearRecurso10);
         }
     }
 
