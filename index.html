@@ -10,7 +10,8 @@
 	<title>Índice Riosa</title>
 	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-	<script src="js/Carrusel.js"></script>	
+	<script src="js/Carrusel.js"></script>
+	<script src="js/ConversionSVG.js"></script>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 	
@@ -33,16 +34,15 @@
 	<main>
 		<section>
 		<h2>Carrusel sitios turísticos</h2>
-			<section>
 				<img src ="multimedia/angliru.png" alt="Icono del Framework"/>
-			</section>
-			<input type="button" value="Anterior" onclick="carrusel.getPrevious()" />
+			<input type="button" value="Anterior" onclick="conversion.cargar()" />
 			<input type="button" value="Siguiente" onclick="carrusel.getNext()" />
 		</section>
 		
 	<section>
 		<h2>Noticias mundiales</h2>
 		<p>Estas son las noticias para el día de hoy:</p>
+		<p></p>
 		<p></p>
 		<p></p>
 		<p></p>

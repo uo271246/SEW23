@@ -72,7 +72,8 @@ $sesionChecker -> requestMethod();
 ?>
 
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
 <head>
 	<meta charset="UTF-8" />
 	<meta name ="author" content = "Pablo Rodríguez Rodríguez" />
@@ -80,8 +81,8 @@ $sesionChecker -> requestMethod();
 	<meta name ="keywords" content= "Email, contraseña" />
 	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
   <title>Iniciar Sesión</title>
-  <link rel='stylesheet' type='text/css' href='../estilo/estilo.css' />
-  <link rel='stylesheet' type='text/css' href='../estilo/layout.css' />
+  <link rel='stylesheet' type='text/css' href='../estilo/estilo.css'/>
+  <link rel='stylesheet' type='text/css' href='../estilo/layout.css'/>
 </head>
 <body>
   <header>
@@ -120,8 +121,8 @@ $sesionChecker -> requestMethod();
     <input type='password' id='password' name='password' required>
     <button type='submit'>Iniciar Sesión</button>
   </form>
-  </section>
-  <section>
+</section>
+<section>
   <?php $sesionChecker->printMensajeError()?>
 </section>
   </main>

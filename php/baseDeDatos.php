@@ -126,6 +126,24 @@ class BaseDeDatos
         // Id 1
         $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
         VALUES (1,'Subida al Angliru', 'Ruta de subida hasta la cima del Angliru', 1, 5, 10)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (2,'Ruta Collada', 'Ruta de collada', 1, 5, 10)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (3,'Ruta minas', 'Ruta Minas', 1, 5, 10)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (4,'El puente', 'Ir al restaurante el Puente', 2, 5, 10)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (5,'El hogar', 'Ir al restaurante el Hogar', 2, 5, 15)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (6,'Nuevo Lleron', 'Ir al restaurante wl Nuevo Lleron, 2, 5, 20)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (7,'La perdiz', 'Ir al restaurante La perdiz', 2, 5, 20)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (8,'Aldea Soñada', 'Spa en las montañas asturianas', 3, 5, 11)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (9,'Museo de la mineria', 'Excelente para pasar un rato divertido', 4, 5, 13)";
+        $crearRecurso1 = "INSERT IGNORE INTO resources (id, name, description, category_id, available, price)
+        VALUES (10,'Museo de la Lechería', 'Para conocer mejor una tradición asturiana', 1, 5, 12)";
 
         if ($_SERVER['HTTP_HOST'] === 'localhost') {
             $this->conexion->query($crearCategoria1);

@@ -6,6 +6,7 @@ table {
     border: 0.0625em solid;
     border-collapse: collapse;
     background-color: #ffffff;
+    color: #000000;
     max-width: 100%;
     height: auto;
 }
@@ -19,8 +20,8 @@ td {
 
 /*Especificidad 001*/
 th {
-    /* color de fuente heredado de body */
     font-size: larger;
     background-color: rgb(255, 255, 255);
+    color: #000000;
     border: 0.0625em solid;
 }

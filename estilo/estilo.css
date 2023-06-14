@@ -12,12 +12,15 @@ h1 {
   text-transform: uppercase;
   padding: 2%;
   font-size: 2em;
+  background-color: #dadada;
   
+  color: #000000;
 }
 
 /* Especificidad 001*/
 h2 {
   background-color: #dadada;
+  color: #000000;
   font-size: 1.5em;
 }
 
@@ -25,24 +28,29 @@ h2 {
 h3 {
   font-size: 1.25em;
   margin: 1% 1% auto;
-  background-color: #dadada;
+  background-color: #dadada; 
+  color: #000000;
 }
 
 /* Especificidad 001*/
 h4 {
   margin: 1% 1% auto;
   background-color: #dadada;
+  color: #000000;
 }
 
 /* Especificidad 001*/
 section {
   background-color: #ffffff;
+  color: #000000;
 }
 
 /* Especificidad 003*/
 section>p+img {
   max-width: 50%;
   height: auto;
+  color: #000000;
+  background-color: #dadad9;
 }
 
 /* Especificidad 001*/
@@ -63,12 +71,6 @@ dl {
   margin-right: 2%;
 }
 
-/* Especificidad 001*/
-video {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Especificidad 002*/
 h3+p {
   /* color de fuetne heredado de body*/
@@ -84,7 +86,9 @@ h1+p {
 
 /* Especificidad 001*/
 nav {
-  background-color: #a7a7a7;
+  
+  color: #000000;
+  background-color: #a7a7a6;
   margin: 0%;
   height: fit-content;
   padding: 0.5%;
@@ -95,11 +99,13 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 0.5%
+
 }
 
 /* Especificidad 001 */
 header, footer {
-  background-color: #dadada;;
+  color: #000000;
+  background-color: #dadad9;
 }
 
 /* Especificidad 001 */

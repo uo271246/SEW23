@@ -32,6 +32,8 @@ class Noticias {
         ps[i + 1].textContent = json.results[contador].title + ": " + json.results[contador].content;
         contador++;
     }
+    ps[6].textContent ="Última actualización: " +  new Date(Date.now());
+    
     };
 }
 

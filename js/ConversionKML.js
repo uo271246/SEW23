@@ -50,15 +50,13 @@ class Ruta {
     kml += '<Point>\n';
     kml += `<coordinates>${this.coordenadas}</coordinates>\n`;
     kml += '</Point>\n';
-
+    kml += '</Placemark>\n';
     if (this.hitos.length > 0) {
       const self = this;
       this.hitos.forEach(function(hito) {
         kml += hito.generarKML();
       });
     }
-
-    kml += '</Placemark>\n';
     return kml;
   }
 
@@ -77,9 +75,12 @@ class Hito {
   }
 
   generarKML() {
-    let kml = '<Point>\n';
+    let kml = '<Placemark>\n';
+    kml += `<name>${this.nombre}</name>\n`;
+    kml += '<Point>\n';
     kml += `<coordinates>${this.coordenadas}</coordinates>\n`;
     kml += '</Point>\n';
+    kml += '</Placemark>\n';
     return kml;
   }
 

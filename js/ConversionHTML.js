@@ -29,6 +29,12 @@ class Conversor {
         rutas.forEach(function(ruta) { 
           html += ruta.generarHTML();   
         });
+        html += '<a title="angliruSVG"  href="xml/angliru.svg">Angliru.svg</a>\n';
+        html += '<a title="colladaSVG"  href="xml/collada.svg">Collada.svg</a>\n';
+        html += '<a title="minasSVG"  href="xml/minas.svg">Minas.svg</a>\n';
+        html += '<a title="rutasKKML"  href="xml/rutas.kml">Rutas.kml</a>\n';
+        html += '<img src="multimedia/mapa_kml.png" alt="Mapa kml">';
+
         html += "</main>\n";
         html += '<footer><p>Autor : <em>Pablo Rodríguez Rodríguez</em></p></footer>\n';
 

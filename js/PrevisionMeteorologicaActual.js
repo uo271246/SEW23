@@ -10,11 +10,8 @@ class PrevisionMeteorologicaActual {
 
     cargarTiempo(json) {
         var info ="El tiempo es de " + json.weather[0].description + '\n';
-        //$('p').append(info);     
         info += "La temperatura es de " + json.main.temp + '\n';
-        //$('p').append(info);
         info += "Humedad " + json.main.humidity + '\n';
-        //$('p').append(info);
         var h2Element = document.getElementsByTagName("h2")[3];
         h2Element.insertAdjacentHTML("afterend",info);
     };

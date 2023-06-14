@@ -3,7 +3,7 @@ constructor() {
 }
 
 verDatos(datos) {
-var cabecera = '<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE svg> <svg xmlns="http://www.w3.org/2000/svg">';
+var cabecera = '<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg">';
     var altitud;
     var lineTag = '';
     $(datos)
@@ -36,20 +36,6 @@ cargar() {
     });
 }
 
-apiCall() {
-    $.ajax({
-        dataType: "json",
-        url: this.url,
-        method: 'GET',
-        success: function (data) {
-            meteo.cargar(data);
-        },
-        error: function () {
-            console.log("Algo ha ido mal");
-        }
-    });
-
-}
 }
 
 var conversion = new Conversion();

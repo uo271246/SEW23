@@ -157,16 +157,17 @@ $reservaTuristica->procesarReserva();
 ?>
 
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
 <head>
 <meta charset="UTF-8" />
 	<meta name ="author" content = "Pablo Rodríguez Rodríguez" />
 	<meta name ="description" content ="Reservas Riosa" />
 	<meta name ="keywords" content= "Recurso turístico" />
 	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
-    <title>Reservar Recurso Turístico</title> 
-  <link rel='stylesheet' type='text/css' href='../estilo/estilo.css' />
-  <link rel='stylesheet' type='text/css' href='../estilo/layout.css' />
+    <title>Reservar Recurso Turístico</title>
+    <link rel='stylesheet' type='text/css' href='../estilo/estilo.css'/>
+    <link rel='stylesheet' type='text/css' href='../estilo/layout.css'/>
 </head>
 <body>
     <header>
@@ -198,15 +199,15 @@ $reservaTuristica->procesarReserva();
            <?php $reservaTuristica->showOptions();?>
         </select>
         <label for="fechaInicio">Fecha y hora de inicio:</label>
-        <input type="datetime-local" name="fechaInicio" required>
+        <input type="datetime-local" id=fechaInicio name="fechaInicio" required>
         <label for="fechaFin">Fecha y hora de final:</label>
-        <input type="datetime-local" name="fechaFin" required>
+        <input type="datetime-local"  id="fechaFin" name="fechaFin" required>
         <button type="submit">Reservar</button>
     </form>
-    </section>
-    <section>  
+</section>
+<section>  
     <?php $reservaTuristica->mostrarMensajes(); ?>
-    </section>
+</section>
     </main>
 	<footer>
 	 <p>Autor : <em>Pablo Rodríguez Rodríguez</em></p>
